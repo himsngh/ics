@@ -59,7 +59,7 @@ type Attendee struct {
 	PartStatus   AttendeeStatus
 	//RSVP is by default NO
 	CuType CalendarUserType
-	Rsvp   RSVP
+	Rsvp   Rsvp
 }
 
 type Role string
@@ -86,9 +86,9 @@ const (
 // This is related to PartStat
 // https://datatracker.ietf.org/doc/html/rfc5545#section-3.2.12
 // https://datatracker.ietf.org/doc/html/rfc5545#section-3.2.17
-type RSVP string
+type Rsvp string
 
 const (
-	Rsvp_False RSVP = "FALSE"
-	Rsvp_True  RSVP = "TRUE"
+	Rsvp_False Rsvp = "FALSE"
+	Rsvp_True  Rsvp = "TRUE"
 )
